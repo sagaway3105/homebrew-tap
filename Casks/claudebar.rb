@@ -4,7 +4,7 @@ cask "claudebar" do
 
   url "https://github.com/sagaway3105/claude-bar/releases/download/v#{version}/ClaudeBar-v#{version}.zip"
   name "ClaudeBar"
-  desc "Claude plan usage in the macOS menu bar"
+  desc "Claude plan usage in the menu bar"
   homepage "https://github.com/sagaway3105/claude-bar"
 
   livecheck do
@@ -13,7 +13,7 @@ cask "claudebar" do
   end
 
   auto_updates true
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
   depends_on arch: :arm64
 
   app "ClaudeBar.app"
